@@ -1,3 +1,40 @@
+## 0.0.377 - 2026-01-08
+
+- Large file messages now encourage incremental reading with view_range instead of discouraging all reading
+
+## 0.0.376 - 2026-01-08
+
+- Loading remote sessions using GraphQL ID or session picker
+- Task tool subagents can now process images
+- Downgrading CLI version no longer requires manually clearing downloaded packages
+- Large tool outputs are written to disk and models are encouraged to use efficient search tools
+
+## 0.0.375 - 2026-01-07
+
+- Add Ctrl+T to toggle reasoning summaries for supported models
+- Add --share and --share-gist flags for session sharing in non-interactive mode
+- File edits no longer hang when approving multiple concurrent edits
+- Responses with reasoning no longer cause duplicate assistant messages
+- Shutdown MCP servers after subagent execution completes
+- SVG files are now treated as text files instead of binary images
+- Fix 'Connection Error' issues due to subscription-based route used in chat completions
+
+## 0.0.374 - 2026-01-02
+
+- MCP server type help text displays correct options
+- Model picker shows clearer message with settings link when models are unavailable
+- Add auto-compaction at 95% token limit and `/compact` command
+- Built-in subagents for exploring and managing tasks
+- Built in `web_fetch` tool for fetching web content
+
+## 0.0.373 - 2025-12-30
+
+- Tab completion for path arguments in slash commands like `/cwd` and `/add-dir`
+- Enable Copilot Spaces tools in GitHub MCP Server
+- GitHub URL resolves correctly for GHE
+- Kill command filtering now allows commands when 'kill' appears as an argument
+- Device code authorization polling begins immediately instead of waiting for clipboard and browser
+
 ## 0.0.372 - 2025-12-19
 
 - Enable disabled models directly in CLI when selecting or specifying them
